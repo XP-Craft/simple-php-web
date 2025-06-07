@@ -3,4 +3,5 @@
 
 return [
     'site_name' => 'Simple PHP Web',
+    'pricings' => [],
 ];
