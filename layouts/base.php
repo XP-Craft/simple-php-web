@@ -1,7 +1,8 @@
+<?php // layouts/base.php ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?php echo($config['site_name']) ?></title>
+    <title><?php echo $config['site_name']; ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -9,7 +10,7 @@
 <?php include __DIR__ . '/../components/navbar.php'; ?>
 
 <main>
-    <?php include $view; ?>
+    <?php include __DIR__ . '/../' . $view; ?>
 </main>
 
 <?php include __DIR__ . '/../components/footer.php'; ?>
