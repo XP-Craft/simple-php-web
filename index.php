@@ -1,8 +1,7 @@
 <?php
-
 $config = include 'config.php';
 
-$page = $_GET['page'] ?? 'home';
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 switch ($page) {
     case 'pricing':
