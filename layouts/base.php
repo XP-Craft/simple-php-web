@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><? $config['site_name'] ?></title>
+    <title><?php echo($config['site_name']); ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
