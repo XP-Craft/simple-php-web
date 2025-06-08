@@ -13,6 +13,6 @@ if (array_key_exists($current_page, $routes)) {
     $page_title = 'Page Not Found';
 }
 
-include 'layouts/base.php';
+include 'components/layout.php';
 
 ?>
