@@ -1,4 +1,3 @@
-<?php // layouts/base.php ?>
 <!DOCTYPE html>
 <html>
 <head>
