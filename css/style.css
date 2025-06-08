@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
-    line-height: 1.5;
 }
 
 /* Navbar */
@@ -14,7 +13,6 @@ nav {
     display: flex;
     gap: 1em;
     justify-content: center;
-    border-radius: 0 0 8px 8px;
 }
 
 nav a {
@@ -22,8 +20,7 @@ nav a {
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 4px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 nav a:hover,
@@ -37,29 +34,30 @@ main {
     padding: 2em;
     max-width: 800px;
     margin: auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+}
+
+/* List items */
+ul {
+    list-style-type: "👉 ";
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
 }
 
 /* Pricing boxes */
 div.pricing-box {
-    background: #fff;
+    background: white;
     border: 1px solid #ddd;
     padding: 1.5em;
     margin-bottom: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: box-shadow 0.3s ease;
-}
-
-div.pricing-box:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 div.pricing-box h2 {
     margin-top: 0;
-    color: #007bff;
 }
 
 /* Footer */
@@ -69,8 +67,6 @@ footer {
     background-color: #343a40;
     color: #ccc;
     margin-top: 2em;
-    border-radius: 8px 8px 0 0;
-    font-size: 0.9em;
 }
 
 /* Form */
@@ -79,7 +75,6 @@ form {
     padding: 1.5em;
     border-radius: 8px;
     border: 1px solid #ddd;
-    box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
 }
 
 input[type="text"],
@@ -90,8 +85,6 @@ textarea {
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;
-    font-family: inherit;
 }
 
 input[type="submit"] {
@@ -101,85 +94,38 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Lists */
-ul {
-    margin: 1em 0 1em 1.5em;
-    padding-left: 0;
-}
-
-ul li {
-    margin-bottom: 0.7em;
-    list-style-type: none;
-    position: relative;
-    padding-left: 1.5em;
-    font-size: 1em;
-}
-
-/* Custom bullet */
-ul li::before {
-    content: "👉";
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-/* Eroor(404) page specific styling */
-.error {
+/* 404 page */
+.error-page {
+    background: white;
+    border: 2px dashed #ff4d4d;
+    padding: 2em;
     text-align: center;
-    padding: 3em 1em;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
-    max-width: 480px;
-    margin: 3em auto;
+    border-radius: 10px;
+    color: #b30000;
+    margin-top: 2em;
 }
 
-.error h1 {
-    font-size: 4em;
-    color: #dc3545;
-    margin-bottom: 0.3em;
-    font-weight: 900;
-    line-height: 1;
+.error-page h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
-.error p {
-    font-size: 1.25em;
-    color: #555;
-    margin-bottom: 1.2em;
-}
-
-.error a {
+.error-page a {
     display: inline-block;
-    background-color: #007bff;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #343a40;
     color: white;
     text-decoration: none;
-    padding: 0.75em 1.5em;
-    border-radius: 6px;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
+    border-radius: 4px;
 }
 
-.error-404 a:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    nav {
-        flex-wrap: wrap;
-        gap: 0.5em;
-    }
-    
-    main {
-        margin: 1em;
-        padding: 1.5em;
-    }
+.error-page a:hover {
+    background-color: #007bff;
 }
