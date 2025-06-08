@@ -1,5 +1,3 @@
- simple-php-web – Plain PHP Demo Site body { font-family: sans-serif; line-height: 1.6; padding: 2em; background-color: #f8f9fa; color: #212529; } code, pre { background-color: #eee; padding: 0.5em; display: block; overflow-x: auto; border-radius: 4px; } h1, h2, h3 { color: #007bff; } ul { padding-left: 1.5em; }
-
 # 🧪 simple-php-web
 
 **A minimal PHP project** to demonstrate how simple and clean plain PHP can be — no frameworks, just includes and good structure.
