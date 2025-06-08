@@ -4,6 +4,8 @@ $config = include 'config.php';
 
 $page = $_GET['page'] ?? 'home';
 
+$current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
 switch ($page) {
     case 'pricing':
         $view = 'views/pricing.php';
