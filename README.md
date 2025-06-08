@@ -1,4 +1,4 @@
-# 🧪 simple-php-web
+# simple-php-web
 
 **A minimal PHP project** to demonstrate how simple and clean plain PHP can be — no frameworks, just includes and good structure.
 
