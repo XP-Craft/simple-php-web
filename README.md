@@ -19,10 +19,9 @@ simple-php-web/
 ├── config.php
 ├── routes.php
 ├── components/
+│   ├── layout.php
 │   ├── navbar.php
 │   └── footer.php
-├── layouts/
-│   └── base.php
 ├── views/
 │   ├── home.php
 │   ├── pricing.php
@@ -30,10 +29,8 @@ simple-php-web/
 │   ├── contact.php
 │   ├── faq.php
 │   └── 404.php
-├── css/
-│   └── style.css
-└── js/
-    └── script.js
+└──  css/
+    └── style.css
 ```
 
 ## ⚙️ config.php Example
