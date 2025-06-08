@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?php echo $config['site_name']; ?></title>
+    <title><?php echo $page_title . ' x ' . $config['site_name']; ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
