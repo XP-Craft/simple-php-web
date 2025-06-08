@@ -1,3 +1,3 @@
 <footer>
-    <p>&copy; <?php echo date('Y'); ?> <?php echo $config['site_name']; ?></p>
+    <p>&copy; <?php echo(date('Y') . ' - ' . $config['site_name']); ?></p>
 </footer>
