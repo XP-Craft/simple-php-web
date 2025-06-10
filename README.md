@@ -51,6 +51,22 @@ return [
 ];
 ```
 
+## 🧭 routes.php Example
+
+```php
+<?php
+return [
+    'home' => [
+        'view' => 'views/home.php',
+        'title' => 'Home'
+    ],
+    'contact' => [
+        'view' => 'views/contact.php',
+        'title' => 'Contact'
+    ],
+];
+```
+
 ## 🚀 How to Run
 
 1.  Clone the repo
