@@ -35,7 +35,7 @@ simple-php-web/
 
 ## ⚙️ config.php Example
 
-```
+```php
 <?php
 return [
     'site_name' => 'simple-php-web',
