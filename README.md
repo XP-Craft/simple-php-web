@@ -55,15 +55,22 @@ return [
 
 ```php
 <?php
+
 return [
     'home' => [
         'view' => 'views/home.php',
         'title' => 'Home'
     ],
-    'contact' => [
-        'view' => 'views/contact.php',
-        'title' => 'Contact'
+    'pricing' => [
+        'view' => 'views/pricing.php',
+        'title' => 'Pricing'
     ],
+    'faq' => [
+        'view' => 'views/faq.php',
+        'title' => 'FAQ'
+    ],
+        'stuff' => 'test/a/b/c.php',
+        'title' => 'Example view route'
 ];
 ```
 
