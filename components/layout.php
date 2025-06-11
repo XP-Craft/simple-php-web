@@ -7,6 +7,8 @@
 </head>
 <body>
 
+<?php include __DIR__ . '/alert.php'; ?>
+
 <?php include __DIR__ . '/navbar.php'; ?>
 
 <main>
