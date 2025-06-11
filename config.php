@@ -19,4 +19,10 @@ return [
             'features' => ['All Features'],
         ]
     ],
+	
+	'faqs' => [
+	    ['q' => 'What is this site?', 'a' => 'A plain PHP demo site.'],
+	    ['q' => 'Does it use Laravel?', 'a' => 'Nope. Just raw PHP.'],
+	    ['q' => 'Can I use it for learning?', 'a' => 'Absolutely!'],
+	],
 ];
