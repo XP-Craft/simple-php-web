@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $page_title . ' x ' . $config['site_name']; ?></title>
+    <title><?php echo $page_title . ' - ' . $config['site_name']; ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
