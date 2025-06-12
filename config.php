@@ -2,6 +2,19 @@
 
 return [
     'site_name' => 'Simple PHP Web',
+	    
+    'alerts' => [
+        	[
+        	    'type' => 'success',
+        	    'message' => 'Welcome to our demo PHP site!'
+        	],
+        	[
+        	    'type' => 'info',
+        	    'message' => 'This site is built with plain PHP, no framework.'
+        	]
+			// You can also use 'error', 'danger' or 'warning' etc. (color has to be set in stye.css)
+		],
+		
     'pricings' => [
         [
             'title' => 'Basic',
