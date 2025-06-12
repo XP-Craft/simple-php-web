@@ -21,7 +21,8 @@ simple-php-web/
 ├── components/
 │   ├── layout.php
 │   ├── navbar.php
-│   └── footer.php
+│   ├── footer.php
+│   ├── alert.php
 ├── views/
 │   ├── home.php
 │   ├── pricing.php
@@ -29,48 +30,49 @@ simple-php-web/
 │   ├── contact.php
 │   ├── faq.php
 │   └── 404.php
-└──  css/
+└── css/
     └── style.css
 ```
 
 ## ⚙️ config.php Example
 
-```php
+```
 <?php
 return [
-    'site_name' => 'simple-php-web',
-    'pricings' => [
-        ['title' => 'Basic', 'price' => '$10/mo'],
-        ['title' => 'Pro', 'price' => '$20/mo'],
-        ['title' => 'Enterprise', 'price' => 'Contact us'],
-    ],
-    'faqs' => [
-        ['q' => 'Is this Laravel?', 'a' => 'No, just PHP.'],
-        ['q' => 'Can I use this to learn?', 'a' => 'Absolutely.'],
-    ],
+  'site_name' => 'simple-php-web',
+  'pricings' => [
+    ['title' => 'Basic', 'price' => '$10/mo'],
+    ['title' => 'Pro', 'price' => '$20/mo'],
+    ['title' => 'Enterprise', 'price' => 'Contact us'],
+  ],
+  'faqs' => [
+    ['q' => 'Is this Laravel?', 'a' => 'No, just PHP.'],
+    ['q' => 'Can I use this to learn?', 'a' => 'Absolutely.'],
+  ],
 ];
 ```
 
 ## 🧭 routes.php Example
 
-```php
+```
 <?php
-
 return [
-    'home' => [
-        'view' => 'views/home.php',
-        'title' => 'Home'
-    ],
-    'pricing' => [
-        'view' => 'views/pricing.php',
-        'title' => 'Pricing'
-    ],
-    'faq' => [
-        'view' => 'views/faq.php',
-        'title' => 'FAQ'
-    ],
-        'stuff' => 'test/a/b/c.php',
-        'title' => 'Example view route'
+  'home' => [
+    'view' => 'views/home.php',
+    'title' => 'Home'
+  ],
+  'pricing' => [
+    'view' => 'views/pricing.php',
+    'title' => 'Pricing'
+  ],
+  'faq' => [
+    'view' => 'views/faq.php',
+    'title' => 'FAQ'
+  ],
+  'stuff' => [
+    'view' => 'test/a/b/c.php',
+    'title' => 'Example view route'
+  ]
 ];
 ```
 
@@ -86,8 +88,30 @@ return [
 *   Dynamic routing with `?page=`
 *   Automatic 404 fallback
 *   Config-driven data (pricing, FAQs)
-*   Semantic HTML with a basic stylesheet
+*   Reusable layout and components
+*   Alerts via config or query string
 *   Active nav link highlighting
+
+## 🔔 Alerts
+
+Alerts are shown using the `components/alert.php` file. You can add static alerts via `config.php`, or show alerts dynamically via URL:
+
+### Example (via URL):
+
+Append `?alert_type=success&alert_message=Hello+world!` to any page.
+
+### Supported types:
+
+*   `success`
+*   `info`
+*   `warning`
+*   `error` or `danger`
+you can add more by creating styles for it in `style.css`.
+### Example URLs:
+
+*   `?page=home&alert_type=info&alert_message=Welcome+to+the+site!`
+*   `?page=pricing&alert_type=success&alert_message=Great+choice!`
+*   `?page=faq&alert_type=error&alert_message=Something+went+wrong.`
 
 ## 📄 License
 
