@@ -106,7 +106,8 @@ Append `?alert_type=success&alert_message=Hello+world!` to any page.
 *   `info`
 *   `warning`
 *   `error` or `danger`
-you can add more by creating styles for it in `style.css`.
+<br>you can add more by creating styles for it in `style.css`.
+
 ### Example URLs:
 
 *   `?page=home&alert_type=info&alert_message=Welcome+to+the+site!`
